@@ -5,11 +5,10 @@
     margin:0 auto;
     background-color: #F7F3F3;
 }
-.modal-order{
+
+.order-modal{
     display:flex;
     flex-direction: column;
-}
-.modal{
     max-width:502px;
     width:100%;
     padding:40px 34px 38px 34px;
@@ -17,7 +16,7 @@
     margin:0 auto;
     box-shadow: 0px 13px 28px rgba(0, 0, 0, 0.15);
     border-radius: 24px;
-    z-index:50;
+    z-index:100;
     position: relative;
     top:259px;
 
@@ -47,6 +46,8 @@
       border-radius: 40px;
       padding:14px;
       cursor:pointer;
+      font-size: 15px;
+      text-align: center;
     }
     &__payment-method:hover{
         background-color: #EADFDF;
@@ -164,6 +165,7 @@
         box-shadow: 0px 13px 28px rgba(0, 0, 0, 0.1);
         border-radius: 0px 0px 24px 24px;
         top:50px;
+        z-index:50;
     }
     &__content{
         width:100%;
@@ -181,8 +183,40 @@
     &__item:hover{
         color:#EB5C05;   
     }
-
 }
+.street-choice{
+    position: relative;
+    &__list{
+        background-color: #F7F3F3;
+        position: absolute;
+        width:100%;
+        max-width:434px;
+        max-height: 215px;
+        padding-left: 24px;
+        box-shadow: 0px 13px 28px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 24px 24px;
+        top:50px;
+    }
+    &__content{
+        width:100%;
+        max-width:378px;
+        border-top: 0.5px solid #E1D2D2;
+        padding-top: 10px;
+    }
+    &__item{
+        font-weight: 500;
+        font-size:15px;
+        color:#2D1509;
+        margin-bottom: 12px;
+        cursor:pointer;
+    }
+    &__item:hover{
+        color:#EB5C05;   
+    }
+}
+
+
+
 .hidden{
     display: none;
 }

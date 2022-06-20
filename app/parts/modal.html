@@ -1,18 +1,18 @@
 <div class="container">
 
-    <div class="modal">
+    <div class="order-modal">
         <div class="modal-order">
-            <div class="modal__title inter">Оформить заказ</div>
-            <div class="modal__payment">
-                <div class="modal__payment-method active inter">Наличными</div>
-                <div class="modal__payment-method inter">Картой курьеру</div>
+            <div class="order-modal__title inter">Оформить заказ</div>
+            <div class="order-modal__payment">
+                <div class="order-modal__payment-method active inter">Наличными</div>
+                <div class="order-modal__payment-method inter">Картой курьеру</div>
             </div>
-            <div class="modal__form">
+            <div class="order-modal__form">
                 <input type="text" placeholder="Имя*" class="order-input order-input__first "> <br>
                 <input type="text" placeholder="Телефон*" class="order-input input-error"> <br>
                 <div class="city-choice">
                     <input type="text" placeholder="Город доставки*" class="order-input order-input ">
-                    <div class="city-choice__list">
+                    <div class="city-choice__list hidden ">
                         <div class="city-choice__content">
                             <div class="city-choice__item inter">Кострома</div>
                             <div class="city-choice__item inter">Кострома</div>
@@ -22,7 +22,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="street-choice"> 
                 <input type="text" placeholder="Адрес доставки*" class="order-input"> <br>
+                <div class="street-choice__list">
+                    <div class="street-choice__content ">
+                        <div class="street-choice__item inter">Войкова</div>
+                        <div class="street-choice__item inter">Индустриальная</div>
+                        <div class="street-choice__item inter">Калиновская</div>
+                        <div class="street-choice__item inter">Ленина</div>
+                        <div class="street-choice__item inter">Сутырина</div>
+                    </div>
+                </div>
+                </div>
                 <div class='order-input__exact-adresses'>
                     <input type="text" placeholder="Подъезд"
                         class="order-input order-input__left order-input__exact-adress ">
@@ -30,15 +41,12 @@
                     <input type="text" placeholder="Квартира"
                         class="order-input order-input__right order-input__exact-adress ">
                 </div>
-
-
             </div>
             <button class="modal-order-button inter"> Оформить заказ на 1220 ₽ </button>
-
-            <div class="modal__info inter">Нажимая кнопку Оформить заказ, вы соглашаетесь с <span
+            <div class="order-modal__info inter">Нажимая кнопку Оформить заказ, вы соглашаетесь с <span
                     class="privacy-policy">политикой конфиденциальности</span> </div>
 
-            <div class="modal__close-btn"><img src="/images/dist/modal-close.svg" alt="крестик"></div>
+            <div class="order-modal__close-btn"><img src="/images/dist/modal-close.svg" alt="крестик"></div>
         </div>
     </div>
 
