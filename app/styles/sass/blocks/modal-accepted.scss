@@ -22,13 +22,11 @@
 }
 
 
+
 @media screen and (max-width:420px){
-  .modal{
-    position: absolute;
-    bottom:0;
-  }
+
+
   .modal-accepted{
- 
   min-height: 294px;
   &__title{
     font-size: 26px;
