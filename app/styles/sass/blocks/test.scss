@@ -7,22 +7,21 @@
 }
 
 .order-modal {
-    position: absolute;
-    display:none;
- 
     display: flex;
     flex-direction: column;
     max-width: 502px;
     width: 100%;
     padding: 40px 34px 38px 34px;
     background-color: #fff;
+    margin: 0 auto;
     box-shadow: 0px 13px 28px rgba(0, 0, 0, 0.15);
     border-radius: 24px;
     z-index: 100;
-   
-    
+    position: relative;
+    top: 259px;
+}
 
-    &__title {
+.order-modal__title {
         font-size: 32px;
         line-height: 39px;
         color: #2D1509;
@@ -30,7 +29,7 @@
         margin-bottom: 20px;
     }
 
-    &__payment {
+    .order-modal__payment {
         display: flex;
         background-color: #F3E9E9;
         border-radius: 500px;
@@ -39,7 +38,7 @@
         margin-bottom: 32px;
     }
 
-    &__payment-method {
+    .order-modal__payment-method {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -53,18 +52,18 @@
         text-align: center;
     }
 
-    &__payment-method:hover {
+    .order-modal__payment-method:hover {
         background-color: #EADFDF;
     }
 
-    &__form {
+    .order-modal__form {
         width: 100%;
         max-width: 434px;
         margin-bottom: 52px;
 
     }
 
-    &__info {
+    .order-modal__info {
         width: 100%;
         max-width: 316px;
         margin: 0 auto;
@@ -76,7 +75,7 @@
 
     }
 
-    &__underline {
+    .order-modal__underline {
         width: 100%;
         max-width: 195px;
         margin: 0 auto;
@@ -84,14 +83,14 @@
         background: rgba(175, 163, 163, 0.5);
     }
 
-    &__close-btn {
+    .order-modal__close-btn {
         position: absolute;
         max-width: 32px;
         top: 10px;
         right: -60px;
         cursor: pointer;
     }
-}
+
 
 
 .modal-order-button {
@@ -121,33 +120,33 @@
     margin-bottom: 2px;
     width: 100%;
     max-width: 434px;
-
-    &__first {
+}
+.order-input__first {
         border-radius: 24px 24px 0px 0px;
     }
 
-    &__left {
+    .order-input__left {
         border-radius: 0px 0px 0px 24px;
     }
 
-    &__right {
+    .order-input__right {
         border-radius: 0px 0px 24px 0px;
     }
 
-    &__exact-adresses {
+    .order-input__exact-adresses {
         display: flex;
         gap: 2px;
     }
 
-    &__exact-adress {
+    .order-input__exact-adress {
         width: calc(33% - 2x)
     }
-}
+
 
 .city-choice {
     position: relative;
-
-    &__list {
+}
+.city-choice__list {
         background-color: #F7F3F3;
         position: absolute;
         width: 100%;
@@ -160,14 +159,14 @@
         z-index: 50;
     }
 
-    &__content {
+    .city-choice__content {
         width: 100%;
         max-width: 378px;
         border-top: 0.5px solid #E1D2D2;
         padding-top: 10px;
     }
 
-    &__item {
+    .city-choice__item {
         font-weight: 500;
         font-size: 15px;
         color: #2D1509;
@@ -175,15 +174,14 @@
         cursor: pointer;
     }
 
-    &__item:hover {
+    .city-choice__item:hover {
         color: #EB5C05;
     }
-}
 
 .street-choice {
     position: relative;
-
-    &__list {
+}
+.street-choice__list {
         background-color: #F7F3F3;
         position: absolute;
         width: 100%;
@@ -195,14 +193,14 @@
         top: 50px;
     }
 
-    &__content {
+    .street-choice__content {
         width: 100%;
         max-width: 378px;
         border-top: 0.5px solid #E1D2D2;
         padding-top: 10px;
     }
 
-    &__item {
+    .street-choice__item {
         font-weight: 500;
         font-size: 15px;
         color: #2D1509;
@@ -210,10 +208,10 @@
         cursor: pointer;
     }
 
-    &__item:hover {
+    .street-choice__item:hover {
         color: #EB5C05;
     }
-}
+
 
 .hidden {
     display: none;
@@ -243,13 +241,59 @@
     .order-modal {
         border-radius: 24px 24px 0px 0px;
         box-shadow: none;
-
-        &__title {
+    }
+    .order-modal__title {
             font-size: 26px;
         }
 
-        &__payment-method {
+        .order-modal__payment-method {
             font-size: 13px;
         }
     }
-}
+
+
+
+
+    .modal-accepted{
+        display:flex;
+        flex-direction: column;
+        min-height:587px;
+    }
+    .modal-accepted__title{
+        color:#C0B3AB;
+        font-size: 32px;
+        font-weight: 700;
+        margin-top: 19px;
+        margin-bottom: 12px;
+      }
+      .modal-accepted__description{
+        font-weight:600;
+        font-size:22px;
+        color:#2D1509;
+      }
+      .modal-accepted__btn{
+        margin-top:auto;
+        justify-content: space-between;
+      }
+    
+    
+    
+    
+    
+    @media screen and (max-width:420px){
+    
+    
+      .modal-accepted{
+      min-height: 294px;
+    }
+    .modal-accepted__title{
+        font-size: 26px;
+      }
+      .modal-accepted_description{
+        font-size: 18px;
+      }
+      .modal-accepted__btn{
+        font-size: 14px;
+      }
+    }
+    
