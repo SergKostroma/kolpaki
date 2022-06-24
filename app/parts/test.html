@@ -1,4 +1,3 @@
-
 <div class="basket-sucsess-mobile js-basket-sucsess-mobile">
     <div class="basket-text-zakaz">
         <div class="finger">👍</div>
@@ -67,12 +66,77 @@
 
         </div>
     </div>
+
+
+
+
+
+
+    <div class="col-12 basket-form-mobile hidden " >
+        <div class="basket-text-cosen hidden">
+        <div class="back-button js-back-button">← В корзину</div>
+            <div class="basket-form-title">Оформить заказ</div>
+            </br>
+            <div class="order-modal__payment">
+            <div class="order-modal__payment-method active inter">Наличными</div>
+            <div class="order-modal__payment-method inter">Картой курьеру</div>
+            </div>
+
+            <form class="js-order-create basket-form">
+
+            <input type="text" name="NAME" placeholder="Имя*"
+                class="order-input white order-input__first top-basket-input-name "> <br>
+            <input type="text" name="PHONE" placeholder="Телефон*" class="order-input middle-basket-input-phone white"> <br>
+            <div class="city-choice">
+                <input type="text" name="LOCATION" placeholder="Город доставки*"
+                    class="order-input order-input middle-basket-input-phone white">
+                <div class="city-choice__list white hidden ">
+                    <div class="city-choice__content">
+                        <div class="city-choice__item inter">Кострома</div>
+                        <div class="city-choice__item inter">Кострома</div>
+                        <div class="city-choice__item inter">Кострома</div>
+                        <div class="city-choice__item inter">Кострома</div>
+                        <div class="city-choice__item inter">Кострома</div>
+                    </div>
+                </div>
+            </div>
+            <div class="street-choice">
+                <input type="text" name="ADDRESS" placeholder="Адрес доставки*"
+                    class="order-input bottom-basket-input-address white"> <br>
+                <div class="street-choice__list hidden white js-list-addresses ">
+                    <div class="street-choice__content ">
+                        <div class="street-choice__item inter">Войкова</div>
+                        <div class="street-choice__item inter">Индустриальная</div>
+                        <div class="street-choice__item inter">Калиновская</div>
+                        <div class="street-choice__item inter">Ленина</div>
+                        <div class="street-choice__item inter">Сутырина</div>
+                    </div>
+                </div>
+            </div>
+            <div class='order-input__exact-adresses'>
+                <input type="text" name="ENTRANCE" placeholder="Подъезд"
+                    class="order-input order-input__left order-input__exact-adress white ">
+                <input type="text" name="FLOOR" placeholder="Этаж" class="order-input order-input__exact-adress white">
+                <input type="text" name="FLAT" placeholder="Квартира"
+                    class="order-input order-input__right order-input__exact-adress white ">
+            </div>
+        </form>
+        <div class="basket-form-button">
+        <button class="modal-order-button inter "> Оформить заказ на 1220 ₽ </button>
+          
+            <div class="order-modal__info inter">Нажимая кнопку Оформить заказ, вы соглашаетесь с <span
+            class="privacy-policy">политикой конфиденциальности</span> </div>
+            </div>
+        </div>
+    </div>
+
+
 </div>
 
 
 
 
-<div class="modal-block">
+<div class="modal-block ">
 <div class="order-modal form-modal">
 
     <div class="order-modal__title inter">Оформить заказ</div>
@@ -100,7 +164,7 @@
                 </div>
             </div>
             <div class="street-choice">
-                <input type="text" name="ADRESS" placeholder="Адрес доставки*"
+                <input type="text" name="ADDRESS" placeholder="Адрес доставки*"
                     class="order-input bottom-basket-input-address"> <br>
                 <div class="street-choice__list hidden js-list-addresses ">
                     <div class="street-choice__content ">
@@ -132,9 +196,9 @@
 </div>
 
 
-<div class="modal-block">
+<div class="modal-block hidden">
     
-<div class="order-modal hidden">     
+<div class="order-modal ">     
         <div class="modal-accepted js-order-sucsess">
             <div class="finger">👍</div>
             <div class="modal-accepted__title js-number-order inter">Номер заказа #503</div>
@@ -145,3 +209,5 @@
 </div>
 
     </div>
+
+
