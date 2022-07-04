@@ -1,0 +1,154 @@
+/* Слайдер */
+.slick-slider{
+    /* max-width: 1100px; */
+    
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{
+   
+}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted{
+
+}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow:hidden; 
+   
+}
+
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+       
+}
+/* Слайд */
+.slick-slide:not(.slick-active)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .5) 100%); */
+   
+    z-index: 2;
+}
+.slick-slide {
+    /* max-width: 1100px; */
+    position: relative;
+    /* min-width: 1100px; */
+}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{
+     /* margin: 0 10px 0 0; */
+ 
+}
+
+/* Слайд основной */
+.slick-slide.slick-current{
+ 
+}
+/* Слайд по центру */
+.slick-slide.slick-center{
+   
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{
+
+}
+.stock-slider{
+    position: relative;
+}
+/* Стрелка */
+.stock-slider .slick-arrow{
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{
+
+}
+/* Точки (булиты) */
+.slick-dots{
+    font-size: 0;
+    display: flex; 
+    justify-content: center; 
+ 
+}
+.slick-dots button {
+    background: #979797; 
+    border: none;
+    border-radius: 120%; 
+    height: 5px;
+    width: 5px;
+    margin: 10px 5px 5px 5px; 
+    outline: none; 
+    padding: 0;
+}
+.slick-dots button:active {
+    border: #000;
+}
+.stock-slider .slick-dots li.slick-active button {
+    background: #2D1509;
+}
+@media(min-width: 1500px){
+    .stock-slider {
+        position: relative;
+        margin-left: -2vw;
+    }
+}
+@media(min-width: 1124px){
+    .stock-slider {
+        position: relative;
+        margin-left: 2vw;
+    }
+}
+@media(min-width: 907px){
+    .stock-slider {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-left: -2vw;
+    }
+    .mobile-slider{
+        display: none;
+      }
+}
+@media(max-width: 907px){
+    .stock-slider{
+        display: none;
+      }
+    .mobile-slider{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+      }
+}
+@media(max-width: 707px){
+.slick-slide {
+    max-width: 1100px;
+    position: relative;
+}
+.slick-dots button {
+    background: #979797; 
+    border: none;
+    border-radius: 100%; 
+    height: 0px;
+    width: 0px;
+    margin: 0px; 
+    outline: none; 
+    padding: 0;
+}
+}
+
+
+

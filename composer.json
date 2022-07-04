@@ -1,0 +1,17 @@
+{
+    "name": "vesst/caps",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "VetrovAndrey",
+            "email": "vesstrov4942@gmail.com"
+        }
+    ],
+    "require": {
+      "ext-json": "*"
+    }
+}
